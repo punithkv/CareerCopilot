@@ -1,0 +1,346 @@
+
+.career-recommendations {
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 24px;
+  color: var(--text-primary, #202938);
+}
+
+.career-rec-header,
+.career-rec-result-heading,
+.career-rec-role-top,
+.career-rec-skill-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.career-rec-header {
+  margin-bottom: 24px;
+}
+
+.career-rec-header h1 {
+  margin: 10px 0;
+  font-size: clamp(26px, 4vw, 36px);
+}
+
+.career-rec-header p,
+.career-rec-role-card p,
+.career-rec-skill-card p,
+.career-rec-summary p {
+  color: var(--text-secondary, #687386);
+  line-height: 1.65;
+}
+
+.career-rec-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #6556c8;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.career-rec-input-panel,
+.career-rec-summary,
+.career-rec-role-card,
+.career-rec-skill-card,
+.career-rec-week,
+.career-rec-cautions {
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--border-color, #e4e7ee);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.career-rec-input-panel {
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.career-rec-input-panel h2,
+.career-rec-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  font-size: 20px;
+}
+
+.career-rec-input-panel label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: 650;
+}
+
+.career-rec-input-panel input,
+.career-rec-input-panel textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border-color, #d8dce5);
+  border-radius: 9px;
+  background: var(--input-bg, #fff);
+  color: var(--text-primary, #202938);
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.career-rec-input-panel input:focus,
+.career-rec-input-panel textarea:focus {
+  outline: 2px solid #8b7cf0;
+  border-color: transparent;
+}
+
+.career-rec-generate,
+.career-rec-copy,
+.career-rec-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 0;
+  border-radius: 9px;
+  padding: 12px 17px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.career-rec-generate {
+  margin-top: 18px;
+  background: #6556c8;
+  color: #fff;
+}
+
+.career-rec-generate:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.career-rec-copy,
+.career-rec-back {
+  background: var(--surface-bg, #f0f1f6);
+  color: var(--text-primary, #202938);
+}
+
+.career-rec-local-note,
+.career-rec-disclaimer {
+  color: var(--text-secondary, #687386);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.career-rec-error,
+.career-rec-cautions {
+  color: #a33c36;
+  background: #fff4f2;
+  border: 1px solid #f1c5c0;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 18px 0;
+}
+
+.career-rec-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.career-rec-loading {
+  text-align: center;
+  padding: 45px 20px;
+  color: var(--text-secondary, #687386);
+}
+
+.career-rec-spin {
+  animation: career-rec-rotate 1s linear infinite;
+}
+
+@keyframes career-rec-rotate {
+  to { transform: rotate(360deg); }
+}
+
+.career-rec-results {
+  display: grid;
+  gap: 22px;
+}
+
+.career-rec-source-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--text-secondary, #687386);
+  font-size: 13px;
+}
+
+.career-rec-source-info span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 11px;
+  background: var(--surface-bg, #f3f4f8);
+  border-radius: 20px;
+}
+
+.career-rec-summary h3,
+.career-rec-role-card h3,
+.career-rec-skill-card h3 {
+  margin-top: 0;
+}
+
+.career-rec-section {
+  margin-top: 8px;
+}
+
+.career-rec-role-grid,
+.career-rec-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.career-rec-role-top h3 {
+  margin: 0;
+}
+
+.career-rec-role-top strong {
+  color: #6556c8;
+  white-space: nowrap;
+}
+
+.career-rec-fit-track {
+  height: 8px;
+  margin: 14px 0;
+  background: var(--surface-bg, #ececf2);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.career-rec-fit-fill {
+  height: 100%;
+  background: #7565d5;
+  border-radius: inherit;
+}
+
+.career-rec-role-card h4 {
+  margin: 17px 0 8px;
+  font-size: 13px;
+}
+
+.career-rec-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.career-rec-tags span {
+  padding: 6px 9px;
+  border-radius: 7px;
+  background: #e8f5ed;
+  color: #236641;
+  font-size: 12px;
+}
+
+.career-rec-tags.missing span {
+  background: #fff1df;
+  color: #895516;
+}
+
+.career-rec-first-action,
+.career-rec-learning-action {
+  margin-top: 17px;
+  padding: 12px;
+  border-radius: 9px;
+  background: var(--surface-bg, #f3f4f8);
+}
+
+.career-rec-first-action p,
+.career-rec-learning-action p {
+  margin-bottom: 0;
+}
+
+.career-rec-strength-list {
+  display: grid;
+  gap: 10px;
+}
+
+.career-rec-strength-list div {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.career-rec-strength-list svg {
+  flex-shrink: 0;
+  color: #29965d;
+}
+
+.career-rec-skill-heading span {
+  padding: 5px 9px;
+  border-radius: 7px;
+  background: #fff1df;
+  color: #895516;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.career-rec-week-list {
+  display: grid;
+  gap: 12px;
+}
+
+.career-rec-week {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.career-rec-week-number {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #6556c8;
+  color: white;
+  font-weight: 800;
+}
+
+.career-rec-week h3 {
+  margin: 3px 0 7px;
+}
+
+.career-rec-week p {
+  margin: 0;
+  color: var(--text-secondary, #687386);
+}
+
+.career-rec-week li,
+.career-rec-simple-list li,
+.career-rec-cautions li {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .career-recommendations {
+    padding: 14px;
+  }
+
+  .career-rec-header,
+  .career-rec-result-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .career-rec-role-grid,
+  .career-rec-skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .career-rec-week {
+    gap: 10px;
+  }
+}

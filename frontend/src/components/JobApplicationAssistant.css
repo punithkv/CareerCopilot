@@ -1,0 +1,405 @@
+
+.jaa-page {
+  max-width: 1180px;
+  margin: 35px auto;
+  padding: 0 24px 50px;
+  color: var(--text-primary, #172033);
+}
+
+.jaa-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.jaa-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6366f1;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.jaa-header h1 {
+  margin: 12px 0;
+  font-size: 32px;
+}
+
+.jaa-header p,
+.jaa-section-heading p {
+  color: #778195;
+  line-height: 1.6;
+}
+
+.jaa-form,
+.jaa-document-card,
+.jaa-list-card,
+.jaa-results {
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 16px;
+}
+
+.jaa-form {
+  padding: 26px;
+  margin-bottom: 28px;
+}
+
+.jaa-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 22px;
+}
+
+.jaa-section-heading > svg {
+  color: #6366f1;
+}
+
+.jaa-section-heading h2,
+.jaa-section-heading p {
+  margin: 3px 0;
+}
+
+.jaa-input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.jaa-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-weight: 650;
+  margin-bottom: 18px;
+}
+
+.jaa-form input,
+.jaa-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #d6dce6;
+  border-radius: 10px;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+  outline: none;
+}
+
+.jaa-form input:focus,
+.jaa-form textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.jaa-form textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.jaa-description-label small {
+  color: #778195;
+  text-align: right;
+  font-weight: 400;
+}
+
+.jaa-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.jaa-primary-button,
+.jaa-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.jaa-primary-button {
+  border: none;
+  background: #4f46e5;
+  color: #fff;
+}
+
+.jaa-primary-button:hover {
+  background: #4338ca;
+}
+
+.jaa-secondary-button {
+  border: 1px solid #d6dce6;
+  background: transparent;
+  color: inherit;
+}
+
+.jaa-primary-button:disabled,
+.jaa-secondary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.jaa-loading-note {
+  margin-top: 16px;
+  color: #6366f1;
+  font-size: 14px;
+}
+
+.jaa-error {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  padding: 13px;
+  margin-bottom: 15px;
+  border-radius: 9px;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.jaa-results {
+  padding: 25px;
+}
+
+.jaa-result-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.jaa-result-heading h2 {
+  margin: 9px 0;
+}
+
+.jaa-result-heading p {
+  color: #778195;
+  line-height: 1.6;
+}
+
+.jaa-score {
+  min-width: 120px;
+  text-align: center;
+  padding: 18px;
+  border-radius: 14px;
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.jaa-score strong {
+  display: block;
+  font-size: 38px;
+}
+
+.jaa-score span {
+  font-size: 12px;
+}
+
+.jaa-decision {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background: #f3f4f6;
+}
+
+.jaa-decision > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.jaa-decision span {
+  color: #778195;
+  font-size: 13px;
+}
+
+.jaa-result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.jaa-list-card {
+  padding: 19px;
+}
+
+.jaa-list-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 14px;
+  font-size: 16px;
+}
+
+.jaa-list-card ul {
+  margin: 0;
+  padding-left: 21px;
+}
+
+.jaa-list-card li {
+  margin-bottom: 9px;
+  line-height: 1.5;
+  color: #667085;
+}
+
+.jaa-positive h3 {
+  color: #15803d;
+}
+
+.jaa-warning h3 {
+  color: #b45309;
+}
+
+.jaa-document-card {
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+.jaa-document-heading,
+.jaa-document-heading > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.jaa-document-heading > div {
+  justify-content: flex-start;
+}
+
+.jaa-document-heading h3 {
+  margin: 0;
+}
+
+.jaa-document-heading svg {
+  color: #6366f1;
+}
+
+.jaa-document-heading button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 12px;
+  border: 1px solid #d6dce6;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.jaa-document-text {
+  white-space: pre-wrap;
+  line-height: 1.8;
+  color: #667085;
+  margin-top: 18px;
+}
+
+.jaa-disclaimer {
+  margin-top: 20px;
+  color: #778195;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.theme-dark .jaa-form,
+.theme-dark .jaa-results,
+.theme-dark .jaa-document-card,
+.theme-dark .jaa-list-card {
+  background: #111827;
+  border-color: #293548;
+  color: #e5e7eb;
+}
+
+.theme-dark .jaa-form input,
+.theme-dark .jaa-form textarea {
+  background: #1e293b;
+  border-color: #475569;
+  color: #f9fafb;
+}
+
+.theme-dark .jaa-decision {
+  background: #1e293b;
+}
+
+.theme-dark .jaa-document-text,
+.theme-dark .jaa-list-card li {
+  color: #cbd5e1;
+}
+
+.theme-dark .jaa-secondary-button,
+.theme-dark .jaa-document-heading button {
+  border-color: #475569;
+  color: #e5e7eb;
+}
+
+@media (max-width: 700px) {
+  .jaa-header,
+  .jaa-result-heading {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .jaa-input-grid,
+  .jaa-result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jaa-form,
+  .jaa-results {
+    padding: 17px;
+  }
+
+  .jaa-header h1 {
+    font-size: 26px;
+  }
+}
+.jaa-success {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  margin-top: 16px;
+  border-radius: 10px;
+  background: #e8f7ed;
+  color: #176b36;
+  border: 1px solid #b8e5c5;
+  font-size: 14px;
+}
+
+.jaa-save-panel {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: space-between;
+  padding: 22px;
+  margin-top: 24px;
+  border: 1px solid var(--border-color, #dddddd);
+  border-radius: 14px;
+  background: var(--card-background, #ffffff);
+}
+
+.jaa-save-panel h3 {
+  margin: 0 0 8px;
+}
+
+.jaa-save-panel p {
+  margin: 0;
+  max-width: 550px;
+  line-height: 1.6;
+}

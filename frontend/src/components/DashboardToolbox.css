@@ -1,0 +1,98 @@
+
+.toolbox-section {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 24px;
+}
+
+.toolbox-heading {
+  margin-bottom: 20px;
+}
+
+.toolbox-heading span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: #64748b;
+}
+
+.toolbox-heading h2 {
+  margin: 7px 0;
+  font-size: 24px;
+  color: var(--text-primary, #1f2937);
+}
+
+.toolbox-heading p {
+  margin: 0;
+  color: var(--text-secondary, #6b7280);
+}
+
+.toolbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.toolbox-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+  padding: 19px;
+  text-align: left;
+  color: inherit;
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.toolbox-card:hover {
+  transform: translateY(-2px);
+  border-color: #818cf8;
+}
+
+.toolbox-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  color: #4f46e5;
+  background: rgba(99, 102, 241, 0.1);
+  border-radius: 10px;
+}
+
+.toolbox-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.toolbox-content h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.toolbox-content p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-secondary, #6b7280);
+}
+
+.toolbox-arrow {
+  flex-shrink: 0;
+  color: #64748b;
+}
+
+@media (max-width: 700px) {
+  .toolbox-section {
+    padding: 16px;
+  }
+
+  .toolbox-grid {
+    grid-template-columns: 1fr;
+  }
+}
